@@ -51,7 +51,6 @@ namespace Web.api
 
             VehiculoRepo.Insertar(vehiculo);
         }
-
         [HttpPost]
         [Route("insertar")]
         public HttpResponseMessage Insertar([FromBody]Vehiculo vehiculo)
@@ -65,5 +64,6 @@ namespace Web.api
             
             return Request.CreateErrorResponse(HttpStatusCode.BadRequest,"usuario incorrecto");            
         }
+
     }
 }

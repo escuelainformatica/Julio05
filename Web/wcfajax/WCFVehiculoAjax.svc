@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Web.wcfajax.WCFVehiculoAjax" CodeBehind="WCFVehiculoAjax.svc.cs" %>
