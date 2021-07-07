@@ -1,12 +1,15 @@
-﻿using Ejecutable.ServiceReference1;
+﻿using Ejecutable.modelo;
+using Ejecutable.ServiceReference1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 namespace Ejecutable
@@ -68,6 +71,19 @@ namespace Ejecutable
                 dataGridView2.DataSource=cliente.Listar();
                 dataGridView2.Refresh();
             }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            WebClient http = new WebClient();
+            JavaScriptSerializer jss = new JavaScriptSerializer();
+            http.Headers.Add(HttpRequestHeader.Accept, "application/json");
+            string jsonString = http.DownloadString("https://mindicador.cl/api/uf");
+            var indicatorsObject = jss.Deserialize<Root>(jsonString);
+
+            dataGridView3.DataSource=indicatorsObject.serie;
+            dataGridView3.Refresh();
+
         }
     }
 }

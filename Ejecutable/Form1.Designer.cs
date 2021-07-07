@@ -45,8 +45,11 @@ namespace Ejecutable
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button5 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -88,35 +91,35 @@ namespace Ejecutable
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(659, 60);
+            this.textBox2.Location = new System.Drawing.Point(501, 61);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 4;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(659, 99);
+            this.textBox3.Location = new System.Drawing.Point(501, 100);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 5;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(659, 144);
+            this.textBox4.Location = new System.Drawing.Point(501, 145);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 22);
             this.textBox4.TabIndex = 6;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(659, 184);
+            this.textBox5.Location = new System.Drawing.Point(501, 185);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 22);
             this.textBox5.TabIndex = 7;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(659, 232);
+            this.button3.Location = new System.Drawing.Point(501, 233);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 8;
@@ -127,7 +130,7 @@ namespace Ejecutable
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(659, 273);
+            this.label1.Location = new System.Drawing.Point(501, 274);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 9;
@@ -136,7 +139,7 @@ namespace Ejecutable
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(525, 64);
+            this.label2.Location = new System.Drawing.Point(367, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 10;
@@ -146,7 +149,7 @@ namespace Ejecutable
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(528, 99);
+            this.label3.Location = new System.Drawing.Point(370, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 17);
             this.label3.TabIndex = 11;
@@ -155,7 +158,7 @@ namespace Ejecutable
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(528, 144);
+            this.label4.Location = new System.Drawing.Point(370, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 17);
             this.label4.TabIndex = 12;
@@ -164,7 +167,7 @@ namespace Ejecutable
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(528, 184);
+            this.label5.Location = new System.Drawing.Point(370, 185);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 17);
             this.label5.TabIndex = 13;
@@ -172,7 +175,7 @@ namespace Ejecutable
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(849, 345);
+            this.button4.Location = new System.Drawing.Point(691, 346);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(145, 23);
             this.button4.TabIndex = 15;
@@ -183,18 +186,40 @@ namespace Ejecutable
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(768, 36);
+            this.dataGridView2.Location = new System.Drawing.Point(610, 37);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(263, 269);
             this.dataGridView2.TabIndex = 14;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1007, 346);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(145, 23);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "button rest";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(926, 37);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(263, 269);
+            this.dataGridView3.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 450);
+            this.ClientSize = new System.Drawing.Size(1334, 450);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label5);
@@ -215,6 +240,7 @@ namespace Ejecutable
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,6 +264,8 @@ namespace Ejecutable
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dataGridView3;
     }
 }
 

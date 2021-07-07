@@ -92,6 +92,10 @@ Luego, agregar los metodos a la clase (svc), y ademas agregar los metodos a comp
 * Usa menos ancho de banda y tiene un menor lag.
 
 
+## Los web services son clases de servicios con unas anotaciones especiales.
+
+
+
 
 
 
